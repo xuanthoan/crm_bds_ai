@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crm-bds-ai.local/contracts/events/problem-details.schema.json",
+  "title": "CRM_BDS_AI Problem Details (RFC 9457-compatible)",
+  "description": "Canonical error response contract (Sprint 1 baseline). Mirrors docs/engineering/api-standards.md (ENG-API-001) required fields: type, title, status, detail, instance, error_code, correlation_id.",
+  "type": "object",
+  "required": ["type", "title", "status", "detail", "instance", "error_code"],
+  "properties": {
+    "type": {
+      "type": "string",
+      "format": "uri-reference"
+    },
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "type": "integer",
+      "minimum": 100,
+      "maximum": 599
+    },
+    "detail": {
+      "type": "string"
+    },
+    "instance": {
+      "type": "string",
+      "format": "uri-reference"
+    },
+    "error_code": {
+      "type": "string"
+    },
+    "correlation_id": {
+      "type": ["string", "null"]
+    },
+    "field_errors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["field", "code", "message"],
+        "properties": {
+          "field": { "type": "string" },
+          "code": { "type": "string" },
+          "message": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,20 @@
+asyncapi: 3.0.0
+info:
+  title: CRM_BDS_AI Event Documentation (Sprint 1 baseline)
+  version: 0.1.0-foundation
+  description: >-
+    BASELINE / NOT PUBLISHED for business use. Sprint 1 publishes no business
+    channels, operations or messages. This file is the canonical AsyncAPI 3.x
+    placeholder with an explicit status so contract tooling can validate the
+    document shape deterministically (machine-contract-bootstrap IMPL-CONTRACT-001).
+    Business channels will be published by Sprint 2+ reliability/event contracts
+    only.
+channels: {}
+operations: {}
+components:
+  messages: {}
+  schemas:
+    event-envelope:
+      $ref: ../events/event-envelope.schema.json
+    problem-details:
+      $ref: ../events/problem-details.schema.json
