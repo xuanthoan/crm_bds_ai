@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crm-bds-ai.local/contracts/ai/model-registry.schema.json",
+  "title": "AI Model Registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "models"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "models": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "provider_ref",
+          "provider_model_id",
+          "capabilities",
+          "status"
+        ],
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "provider_ref": {
+            "type": "string"
+          },
+          "provider_model_id": {
+            "type": "string"
+          },
+          "capabilities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "context_window": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          },
+          "max_output": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          },
+          "embedding_dimension": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          },
+          "allowed_classifications": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "status": {
+            "enum": [
+              "DRAFT",
+              "EVALUATING",
+              "APPROVED",
+              "ACTIVE",
+              "SUSPENDED",
+              "RETIRED"
+            ]
+          },
+          "evaluation_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "metadata": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}

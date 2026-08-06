@@ -1,0 +1,14 @@
+version: "1.0.0"
+cases:
+  - code: HEALTH_CHECK
+    required: true
+  - code: ERROR_NORMALIZATION
+    required: true
+  - code: STRUCTURED_OUTPUT_VALIDATION
+    required_when_capability_claimed: STRUCTURED_OUTPUT
+  - code: TOOL_CALL_SCHEMA_CONFORMANCE
+    required_when_capability_claimed: TOOL_CALLING
+  - code: EMBEDDING_DIMENSION_STABILITY
+    required_when_capability_claimed: EMBEDDING
+  - code: TIMEOUT_AND_CANCELLATION
+    required: true

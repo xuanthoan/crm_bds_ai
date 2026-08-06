@@ -1,0 +1,21 @@
+version: "1.0.0"
+use_cases:
+  - code: CUSTOMER_TIMELINE_SUMMARY
+    owner_context: party
+    required_capabilities: [CHAT, STRUCTURED_OUTPUT]
+    output_schema_ref: output-schemas/customer-summary.schema.json
+    approval_mode: L0
+    provider_or_model_locked: false
+    status: DRAFT
+  - code: CALL_TASK_EXTRACTION
+    owner_context: activity
+    required_capabilities: [CHAT, STRUCTURED_OUTPUT]
+    approval_mode: L1
+    provider_or_model_locked: false
+    status: DRAFT
+  - code: SEMANTIC_LISTING_SEARCH
+    owner_context: matching
+    required_capabilities: [EMBEDDING]
+    approval_mode: L0
+    provider_or_model_locked: false
+    status: DRAFT

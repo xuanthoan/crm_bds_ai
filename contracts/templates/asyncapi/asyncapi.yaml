@@ -1,0 +1,10 @@
+asyncapi: 3.0.0
+info:
+  title: CRM_BDS_AI Event Template
+  version: 0.0.0-template
+  description: TEMPLATE ONLY. No business channel is published by this file.
+channels: {}
+operations: {}
+components:
+  messages: {}
+  schemas: {}

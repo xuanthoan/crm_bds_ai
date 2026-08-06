@@ -1,0 +1,11 @@
+status: TEMPLATE_ONLY
+product: crm_bds_ai
+permissions:
+  - code: context.resource.action
+    context: context
+    resource: resource
+    action: action
+    allowed_scopes: [mine, team, department, legal_entity, enterprise]
+    data_classification: INTERNAL
+    audit_required: false
+    description: Replace through the accepted Permission Registry workflow.

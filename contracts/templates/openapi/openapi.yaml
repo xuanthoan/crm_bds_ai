@@ -1,0 +1,18 @@
+openapi: 3.1.0
+info:
+  title: CRM_BDS_AI API Template
+  version: 0.0.0-template
+  description: TEMPLATE ONLY. Sprint 1 must generate the canonical OpenAPI artifact.
+servers: []
+paths: {}
+components:
+  schemas:
+    ProblemDetails:
+      type: object
+      required: [type, title, status]
+      properties:
+        type: { type: string, format: uri-reference }
+        title: { type: string }
+        status: { type: integer, minimum: 100, maximum: 599 }
+        detail: { type: string }
+        instance: { type: string, format: uri-reference }

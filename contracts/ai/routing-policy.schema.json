@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crm-bds-ai.local/contracts/ai/routing-policy.schema.json",
+  "title": "AI Routing Policy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "policies"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "policies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "use_case_ref",
+          "required_capabilities",
+          "cloud_allowed",
+          "fallback_allowed",
+          "status"
+        ],
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "use_case_ref": {
+            "type": "string"
+          },
+          "required_capabilities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "preferred_deployments": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "cloud_allowed": {
+            "type": "boolean"
+          },
+          "fallback_allowed": {
+            "type": "boolean"
+          },
+          "max_data_classification": {
+            "type": "string"
+          },
+          "max_cost_per_request": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "max_latency_ms": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          },
+          "status": {
+            "enum": [
+              "DRAFT",
+              "APPROVED",
+              "ACTIVE",
+              "SUSPENDED",
+              "RETIRED"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

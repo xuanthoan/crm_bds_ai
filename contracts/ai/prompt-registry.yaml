@@ -1,0 +1,9 @@
+version: "1.0.0"
+prompts:
+  - code: CUSTOMER_SUMMARY
+    version: "1"
+    use_case_ref: CUSTOMER_TIMELINE_SUMMARY
+    input_schema_ref: null
+    output_schema_ref: output-schemas/customer-summary.schema.json
+    status: DRAFT
+    provider_overrides: {}

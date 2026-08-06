@@ -1,0 +1,12 @@
+version: "1.0.0"
+tools:
+  - code: SEARCH_AVAILABLE_LISTINGS
+    mode: READ_ONLY
+    owner_context: product
+    permission: AI_MATCHING_USE
+    status: DRAFT
+  - code: DRAFT_FOLLOW_UP_TASKS
+    mode: DRAFT_ONLY
+    owner_context: activity
+    permission: AI_TASK_SUGGEST_USE
+    status: DRAFT

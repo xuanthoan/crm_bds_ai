@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crm-bds-ai.local/contracts/ai/adapter-manifest.schema.json",
+  "title": "AI Adapter Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "adapter_type",
+    "implementation",
+    "supported_operations",
+    "version"
+  ],
+  "properties": {
+    "adapter_type": {
+      "type": "string"
+    },
+    "implementation": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "supported_operations": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "GENERATE",
+          "EMBED",
+          "RERANK",
+          "TRANSCRIBE",
+          "SYNTHESIZE",
+          "HEALTH"
+        ]
+      }
+    },
+    "configuration_schema_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "conformance_profile": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

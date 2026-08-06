@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crm-bds-ai.local/contracts/ai/output-schemas/ai-suggestion.schema.json",
+  "title": "AI Suggestion",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "suggestion_id",
+    "use_case_code",
+    "subject",
+    "status",
+    "output_schema_version",
+    "result",
+    "evidence",
+    "requires_human_review"
+  ],
+  "properties": {
+    "suggestion_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "use_case_code": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "object",
+      "required": [
+        "type",
+        "id"
+      ],
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "status": {
+      "enum": [
+        "GENERATED",
+        "VALIDATED",
+        "PRESENTED",
+        "ACCEPTED",
+        "REJECTED",
+        "EDITED_AND_ACCEPTED",
+        "EXPIRED",
+        "FAILED"
+      ]
+    },
+    "output_schema_version": {
+      "type": "string"
+    },
+    "result": {},
+    "confidence": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_type",
+          "source_id"
+        ],
+        "properties": {
+          "source_type": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "version": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "requires_human_review": {
+      "type": "boolean"
+    },
+    "expires_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  }
+}

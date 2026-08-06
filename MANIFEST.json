@@ -1,0 +1,1140 @@
+{
+  "package": "crm_bds_ai_complete_documentation_pack",
+  "package_version": "1.0.0",
+  "generated_at": "2026-08-05",
+  "repository_root": "crm_bds_ai",
+  "file_count_excluding_manifest_and_inventory": 225,
+  "product_capabilities": 14,
+  "bounded_contexts": 16,
+  "adrs": 25,
+  "ai_documents": 29,
+  "canonical_business_rules": 38,
+  "stale_project_references": 0,
+  "files": [
+    {
+      "path": ".skills/universal-ai-engineering-orchestration/SKILL.md",
+      "bytes": 38917,
+      "sha256": "4d0139a6a4dc96eddfec82a0915ee1be20c107db3c8868e8ef406a5c7770294c"
+    },
+    {
+      "path": "APPLY-INSTRUCTIONS.md",
+      "bytes": 642,
+      "sha256": "637d7d7c426d53ea991e59d7b6af08af00f3c65f829aedbd68c1219f0207e1f9"
+    },
+    {
+      "path": "BUSINESS-RULE-PRESERVATION-REPORT.md",
+      "bytes": 2050,
+      "sha256": "df0738fa916a5c48c6f0107af6208da589ad5302b46042b7ceed1a88ac1c4cde"
+    },
+    {
+      "path": "GOOSE-START-PROMPT.md",
+      "bytes": 2881,
+      "sha256": "d8a14b467593dc50f6acb3e83301225e5693b7b94d4d0834ec9e24bfbbb40fac"
+    },
+    {
+      "path": "OPENCODE-EXECUTOR-PROMPT.md",
+      "bytes": 1623,
+      "sha256": "cf2b79e05c09fcc6f0d66d79438a9eb062e3a2a4e3c1af865010313844dd9c36"
+    },
+    {
+      "path": "PACKAGE-README.md",
+      "bytes": 1360,
+      "sha256": "e0971fa9723b979e793deef2f11ea0233bcc81a4ae88d2eb3a239130818a9d8d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 57415,
+      "sha256": "66343a08e63669ce1d92a7db95a983fec7cb551ccbdc74afd4f07532aee3de7a"
+    },
+    {
+      "path": "contracts/ai/adapter-manifest.schema.json",
+      "bytes": 942,
+      "sha256": "4ab91c7f8c22e625249b7790e7f94142d0c93d653ce9c66498315dbb441559c7"
+    },
+    {
+      "path": "contracts/ai/capability-registry.yaml",
+      "bytes": 244,
+      "sha256": "a92a36478fbb67e4e913620150d13f278bedd5ffcd452a7819bbe8016a6d2059"
+    },
+    {
+      "path": "contracts/ai/evaluation-datasets/README.md",
+      "bytes": 610,
+      "sha256": "8e117bfcd95d51487dffb4ca2e6e48737a50769cb151fd0f1e4269a0c0198709"
+    },
+    {
+      "path": "contracts/ai/model-registry.schema.json",
+      "bytes": 2054,
+      "sha256": "0fa576fcba65fb5750adadae188d8892553fb40ddc5c50c0c3e3769c226e8f47"
+    },
+    {
+      "path": "contracts/ai/output-schemas/ai-suggestion.schema.json",
+      "bytes": 1948,
+      "sha256": "7bff3a8d85862f5e9ecec32fa98e6e64037bccbb119698e645ecefb8b1aacafa"
+    },
+    {
+      "path": "contracts/ai/output-schemas/customer-summary.schema.json",
+      "bytes": 1216,
+      "sha256": "4ba2ac05e3b6cdecda3754349e96db62b1c3f34b0e98a4ba3155ff9cfe0ce895"
+    },
+    {
+      "path": "contracts/ai/prompt-registry.yaml",
+      "bytes": 253,
+      "sha256": "484126a93522f7e47967ae91db8b53c90a20b94f35b40cf1ec8737cee0190806"
+    },
+    {
+      "path": "contracts/ai/provider-conformance/conformance-cases.yaml",
+      "bytes": 442,
+      "sha256": "26a76dd36723c2087c7be2f3d19d83f788d1bb9af525173fc6ee8c2fddb05126"
+    },
+    {
+      "path": "contracts/ai/provider-registry.schema.json",
+      "bytes": 2112,
+      "sha256": "f798276558ffd6334d9e475aa3978bea3cdbc6940c6567d55e727da409b8b3f1"
+    },
+    {
+      "path": "contracts/ai/routing-policy.schema.json",
+      "bytes": 1861,
+      "sha256": "c6f99ea093d956860044ff5ef4e346b6f41cbdbbb41c4e654efc6e8287073f74"
+    },
+    {
+      "path": "contracts/ai/tool-registry.yaml",
+      "bytes": 292,
+      "sha256": "8e361807b763a81913600865a8716a63fe05f79305cbb4a42b8e7a0f56a4d391"
+    },
+    {
+      "path": "contracts/ai/use-case-registry.yaml",
+      "bytes": 650,
+      "sha256": "b266b93b0c18356ff7b87cc7c0213df5d4688f638fcb42b6495d1105408aa179"
+    },
+    {
+      "path": "contracts/templates/asyncapi/asyncapi.yaml",
+      "bytes": 229,
+      "sha256": "1387923d450e43856ec4053b2447879540460913bafb34825da45a3c48c2b471"
+    },
+    {
+      "path": "contracts/templates/config/feature-flag.schema.json",
+      "bytes": 728,
+      "sha256": "0950b6a7aebd8729e33b0d74407597b66dc29f75faab3fe709cb3f9ad8fc1cfd"
+    },
+    {
+      "path": "contracts/templates/events/event-envelope.schema.json",
+      "bytes": 1350,
+      "sha256": "bbea7e9cba6083d64d27ca558767c88fff60626ae4320de24c384bd835a25c5c"
+    },
+    {
+      "path": "contracts/templates/events/problem-details.schema.json",
+      "bytes": 615,
+      "sha256": "277ea6947c71372053d6281fbf41e3e52017604aef91c5095b1faca735d75334"
+    },
+    {
+      "path": "contracts/templates/openapi/openapi.yaml",
+      "bytes": 544,
+      "sha256": "d239b338a3ce82f49a4dc7fae371498334b5f54ac433c9feea179a3e6e9c3c30"
+    },
+    {
+      "path": "contracts/templates/security/permission-registry.example.yaml",
+      "bytes": 359,
+      "sha256": "ef4534489fa0263c2bc451f75d68a0979ca45bc3c4412bd0ed02fe1d611c6323"
+    },
+    {
+      "path": "docs/adr/README.md",
+      "bytes": 740,
+      "sha256": "be8a3cb73a371e59143df0ed43c793ea88f0f52929e26249c434f938f0f099cf"
+    },
+    {
+      "path": "docs/adr/adr-001-modular-monolith-first.md",
+      "bytes": 947,
+      "sha256": "808c65d1f58727bfa4f2ff1e774a263939109f28663a2f44db5c0dce31a03448"
+    },
+    {
+      "path": "docs/adr/adr-002-ddd-bounded-contexts.md",
+      "bytes": 893,
+      "sha256": "3658f740889df5ba117732ebde3451b48a02ccc3dedc8a37da72b782315096d0"
+    },
+    {
+      "path": "docs/adr/adr-003-postgresql-schema-per-context.md",
+      "bytes": 888,
+      "sha256": "2b10f7a0cc9fc1c459abecd58a2740c656a283cb411f84cfbfd1bc828da56694"
+    },
+    {
+      "path": "docs/adr/adr-004-no-cross-context-repository-or-orm-imports.md",
+      "bytes": 869,
+      "sha256": "fcc5271d2c79842967ee5e6126d0c8ef704fb309242ea2b44a620ab1b82b386f"
+    },
+    {
+      "path": "docs/adr/adr-005-no-cross-schema-business-writes.md",
+      "bytes": 869,
+      "sha256": "a871350c110308b5b20963017deddcdcdef7431e0a757907360da269df67eac2"
+    },
+    {
+      "path": "docs/adr/adr-006-rest-and-openapi-3-1.md",
+      "bytes": 837,
+      "sha256": "9511c0190b4f0e76e7cbb900739641d3732ab23cb6138b1dc28acfb2ec7ad89c"
+    },
+    {
+      "path": "docs/adr/adr-007-json-schema-and-asyncapi-events.md",
+      "bytes": 853,
+      "sha256": "b5144d1a964cfd1c9bd685008276f397b02977dec93cbe4ba9f166db283d725d"
+    },
+    {
+      "path": "docs/adr/adr-008-transactional-outbox.md",
+      "bytes": 839,
+      "sha256": "3cf2d0dc95a5a3181fd2bc79747fffed9b0a806abb8149da0d6b89fc9e752936"
+    },
+    {
+      "path": "docs/adr/adr-009-consumer-inbox-and-idempotency.md",
+      "bytes": 872,
+      "sha256": "c0324669c09e752f7876793644c4e1f06679008479f0de5623030e23b3e305d4"
+    },
+    {
+      "path": "docs/adr/adr-010-process-managers-instead-of-distributed-transactions.md",
+      "bytes": 898,
+      "sha256": "8d8be38034ef533ce16ffda6b9340d42ca90f13941f3544c732e864674c427ff"
+    },
+    {
+      "path": "docs/adr/adr-011-backend-authorization-scope-and-masking.md",
+      "bytes": 858,
+      "sha256": "a592041137c009aa3c40aaf2c9971093fd89bd409c0e7ade4efd574994f301d6"
+    },
+    {
+      "path": "docs/adr/adr-012-enterprise-global-party-and-customer-identity.md",
+      "bytes": 877,
+      "sha256": "38551c97f5c84ed4f4d071d7fe2017089403ba550b8146096f05cec6327e602e"
+    },
+    {
+      "path": "docs/adr/adr-013-phone-identity-as-duplicate-authority.md",
+      "bytes": 917,
+      "sha256": "a107ff568fd58ffc0b507d3950f8d2c6606229835d729921515ff0e655aaa094"
+    },
+    {
+      "path": "docs/adr/adr-014-product-owns-availability-and-commercial-lock.md",
+      "bytes": 890,
+      "sha256": "5f470de2582f13585d4e18ce13b67aed444faacdebe3f6aab24447d4f4863ea9"
+    },
+    {
+      "path": "docs/adr/adr-015-immutable-receipt-and-signed-records.md",
+      "bytes": 898,
+      "sha256": "729bf822ccd521413e75faf432785edf2caed66f4320fbcab0f981afc6d714ed"
+    },
+    {
+      "path": "docs/adr/adr-016-contract-cash-separate-from-revenue-and-commission.md",
+      "bytes": 921,
+      "sha256": "ed7a1ccab7eed60a31ff0f38c1d295d31d5644ea7c1d04d4c5fea215a3b3259b"
+    },
+    {
+      "path": "docs/adr/adr-017-analytics-read-only-for-business-truth.md",
+      "bytes": 891,
+      "sha256": "2759e5f34077ace777fbd133bcd0e39b2fa4ed73a2e638eb77dfd6965b7fdc57"
+    },
+    {
+      "path": "docs/adr/adr-018-append-only-audit.md",
+      "bytes": 809,
+      "sha256": "33f9f200943367a5ce27eccd1985352bff51c4afe5d84e6461f1c24d8cc6066e"
+    },
+    {
+      "path": "docs/adr/adr-019-object-storage-and-documents-context.md",
+      "bytes": 926,
+      "sha256": "ec545f21591431688ac682efa24afa9560fd22d7e54f05ea4538c74c162cbc96"
+    },
+    {
+      "path": "docs/adr/adr-020-integration-anti-corruption-layer.md",
+      "bytes": 891,
+      "sha256": "77616c551fb789ccc0827cf3504383be743c84e76178702a83f0bee3a56ee405"
+    },
+    {
+      "path": "docs/adr/adr-021-locked-toolchain-and-deterministic-builds.md",
+      "bytes": 903,
+      "sha256": "c2d4f2aee483cfe2ba376aac0fc481fb7290ca0516f02254951df7e7967fe7cd"
+    },
+    {
+      "path": "docs/adr/adr-022-provider-and-model-agnostic-ai-architecture.md",
+      "bytes": 1136,
+      "sha256": "37d66cb87766bcf1aa137aeed05d0fed07605d2fd71c367917cf61de99d018f5"
+    },
+    {
+      "path": "docs/adr/adr-023-ai-suggestions-not-business-truth.md",
+      "bytes": 1055,
+      "sha256": "eaaa5f6ca8c128bcb2aea5c8563c3526313d01dd14d785e2d1c21ee6f30eb50a"
+    },
+    {
+      "path": "docs/adr/adr-024-ai-failure-isolation.md",
+      "bytes": 939,
+      "sha256": "5470358b3ed4b9a36e5bfd8606852c9c0fa45e7891d286a0ec745cc6b17898b4"
+    },
+    {
+      "path": "docs/adr/adr-025-permission-aware-rag-and-versioned-embeddings.md",
+      "bytes": 1040,
+      "sha256": "122886d0cca30c59355fef65bc84d741e210753e0be1b527e1e937b8126d0d50"
+    },
+    {
+      "path": "docs/ai/README.md",
+      "bytes": 1120,
+      "sha256": "c22943bd9b555ba26c2b6d7e3f0611e726adde8b5ac51882482e7c43a2578ded"
+    },
+    {
+      "path": "docs/ai/ai-anti-patterns.md",
+      "bytes": 1216,
+      "sha256": "b2d7660cbda89ba5e6cdfc1ede57e06c250782c3b8d86e75a0fc6f8ca7e6a356"
+    },
+    {
+      "path": "docs/ai/ai-architecture.md",
+      "bytes": 1764,
+      "sha256": "9426977491f38115a06663bca870bf911db60c882304ea2415080b5cb996b49c"
+    },
+    {
+      "path": "docs/ai/ai-canonical-requirements.md",
+      "bytes": 1784,
+      "sha256": "b5a23628ff9421c1e6ae44ab257d542a6db7925d4f3b2b6ad769f3fddfa45133"
+    },
+    {
+      "path": "docs/ai/ai-capability-integration-matrix.md",
+      "bytes": 1840,
+      "sha256": "90158f5c0fc92a1f45cfe6bd7610262d9cb603d41e42f5c941e2dd1a2b5d0a77"
+    },
+    {
+      "path": "docs/ai/ai-capability-registry.md",
+      "bytes": 1026,
+      "sha256": "16af22189049810ea98dd8abcb14941f751cf47cbb3141504f769b4f70a5ffb4"
+    },
+    {
+      "path": "docs/ai/ai-copilot-ui-patterns.md",
+      "bytes": 1005,
+      "sha256": "df06959b38ae900ac7a9f88ff396d9c69268242cdf4d270586511ff2cdb064ab"
+    },
+    {
+      "path": "docs/ai/ai-cost-and-quota-policy.md",
+      "bytes": 908,
+      "sha256": "c277a2fa52fd333d8325f3fa90b468ed4bc068238506db9644449046b0b0746d"
+    },
+    {
+      "path": "docs/ai/ai-data-contracts.md",
+      "bytes": 957,
+      "sha256": "59b71e98eb4503f50a23ef313642f4efe663af55df32a3161cffe0ec544ab94f"
+    },
+    {
+      "path": "docs/ai/ai-embedding-versioning.md",
+      "bytes": 850,
+      "sha256": "3ad3a431e065ca00a5d65eddd125b7bb964aad1f5d992f9fc04e2536fae9c8ac"
+    },
+    {
+      "path": "docs/ai/ai-evaluation-framework.md",
+      "bytes": 1085,
+      "sha256": "94dbceae90c1cb77a59f8d7e51b5409fcb31572c28c2b6c5b480e06dc7e9fdb3"
+    },
+    {
+      "path": "docs/ai/ai-fallback-and-resilience.md",
+      "bytes": 941,
+      "sha256": "7a714aa15ae61ac7f322d422c201eae9b8b571a036e4b3719e3e5fadda9481bb"
+    },
+    {
+      "path": "docs/ai/ai-human-approval-matrix.md",
+      "bytes": 1043,
+      "sha256": "04037828c1073b3999f74114138076b143e4d6d0bb8456bb91213d339644f782"
+    },
+    {
+      "path": "docs/ai/ai-incident-response.md",
+      "bytes": 904,
+      "sha256": "a21241af091e675d73c17f1a54093421b5d4f4d82a64ed3f3436f226184f5571"
+    },
+    {
+      "path": "docs/ai/ai-local-private-cloud-deployment.md",
+      "bytes": 1040,
+      "sha256": "b2c94be3ca5d300a9b3d57149e81e4451c926ef2e6352628535949c812f8b74b"
+    },
+    {
+      "path": "docs/ai/ai-model-registry.md",
+      "bytes": 961,
+      "sha256": "6a03fdb8e455e76454f53dd06a44c0e5bd83a3d796dc387ac781d06802638d5f"
+    },
+    {
+      "path": "docs/ai/ai-observability.md",
+      "bytes": 877,
+      "sha256": "2fa57db89bbd502ddc3905b6429e2dea551d6e01884a4da6d98418226966a9de"
+    },
+    {
+      "path": "docs/ai/ai-product-strategy.md",
+      "bytes": 1711,
+      "sha256": "1e16d24f0a089914792c36e940dc1ef574c5501684c1045cafd5cf3b291b4000"
+    },
+    {
+      "path": "docs/ai/ai-prompt-governance.md",
+      "bytes": 903,
+      "sha256": "3f0cf70dc97d3b53c8afc85fc95f07c9848e1c23db43f59cb2f605ab6de231e8"
+    },
+    {
+      "path": "docs/ai/ai-provider-abstraction.md",
+      "bytes": 1233,
+      "sha256": "a7dac8845eeff790514c9ab60e61cdcf3011232f63401eca154c3faefcea937e"
+    },
+    {
+      "path": "docs/ai/ai-provider-onboarding.md",
+      "bytes": 1031,
+      "sha256": "dd52cb3248ef30823de164a490097fe96e70cd96c24cd132e6af5b7d77510c82"
+    },
+    {
+      "path": "docs/ai/ai-provider-registry.md",
+      "bytes": 877,
+      "sha256": "a1daf5bf71c932fe16da84d04ce49cfe7eb34a2c5b8c7735ca717c6ec5ea6890"
+    },
+    {
+      "path": "docs/ai/ai-rag-standards.md",
+      "bytes": 1046,
+      "sha256": "d7f29dc3aa7e4810995c3d388741afc6d12cb2b4e5631a4551f06b41660244ff"
+    },
+    {
+      "path": "docs/ai/ai-roadmap.md",
+      "bytes": 1092,
+      "sha256": "ea4a58d8d43559298ad5858392130befa484baf4e4ebb66cd8b868950e0dddc0"
+    },
+    {
+      "path": "docs/ai/ai-routing-policy.md",
+      "bytes": 1053,
+      "sha256": "3742b862ce628019b6793eafbb26ed1b684724abe24047338bb892c418de4c45"
+    },
+    {
+      "path": "docs/ai/ai-security-and-privacy.md",
+      "bytes": 1184,
+      "sha256": "2479f3b2440e68c8303460cd6e0a37bcd8497f26b334113694d2eea7476790ee"
+    },
+    {
+      "path": "docs/ai/ai-sprint-integration-plan.md",
+      "bytes": 1179,
+      "sha256": "cc558841bf99d813095fcf6bdbed0760e80be0e4ceac2fe19ca3ab9db4e202ad"
+    },
+    {
+      "path": "docs/ai/ai-tool-governance.md",
+      "bytes": 909,
+      "sha256": "e57fd260aa83e7aaef47cf98e4b3959dedba802c441b0a49da6d0e320578fe2e"
+    },
+    {
+      "path": "docs/ai/ai-use-case-registry.md",
+      "bytes": 1077,
+      "sha256": "59cd5dddf18edb96713a68f5ab83c619cee0e43ad7f521ac85a23f95c4e29f6c"
+    },
+    {
+      "path": "docs/architecture/aggregate-registry.md",
+      "bytes": 2616,
+      "sha256": "df1a84b9c5e49375579e1ddf7044c671bc1425d9325fb98831318657e00ef9b9"
+    },
+    {
+      "path": "docs/architecture/api-surface-catalog.md",
+      "bytes": 2166,
+      "sha256": "db3cbe7ef7e3a5494886dd0ab5e632a41203cb7ae7b84191f8bbdcd97009eadf"
+    },
+    {
+      "path": "docs/architecture/architecture-overview.md",
+      "bytes": 30704,
+      "sha256": "f2f94a1840462846c6b6760192132854b187747272890e5340c2a99b023f6841"
+    },
+    {
+      "path": "docs/architecture/context-map.md",
+      "bytes": 5385,
+      "sha256": "cf9ed61af47eaec878855aa6879f4c8a3f91d1ec89fdc00942d2961d59f18164"
+    },
+    {
+      "path": "docs/architecture/dependency-rules.md",
+      "bytes": 2066,
+      "sha256": "2c40be863a41b798b0562464ffa2df20d809cdf17ce23a2043d0cc66bbdb0a54"
+    },
+    {
+      "path": "docs/architecture/deployment-architecture.md",
+      "bytes": 1347,
+      "sha256": "1b7529c2ec1d392e45f3a5da26d4bf3a789e52d42e48c79312f6e08706eabf63"
+    },
+    {
+      "path": "docs/architecture/event-catalog.md",
+      "bytes": 2407,
+      "sha256": "e0440e68cbb7e8f92841a42219621d4200c819aaffd7c6a359f5b8621ea3579f"
+    },
+    {
+      "path": "docs/architecture/non-functional-requirements.md",
+      "bytes": 2891,
+      "sha256": "d5f9fc032a1c7b7d873bc2472a6b901db2dd6da113dadc981506c10cc5d0c19d"
+    },
+    {
+      "path": "docs/architecture/observability-architecture.md",
+      "bytes": 1224,
+      "sha256": "54fbfbd72ce90e284a1873d6b04ddb5bdd386a3c13256beb160769ad7cf38edf"
+    },
+    {
+      "path": "docs/architecture/process-manager-catalog.md",
+      "bytes": 2120,
+      "sha256": "e76e75037a87726fdca16b6fda2d29418151a6099859c5ff571b00ac882bd48c"
+    },
+    {
+      "path": "docs/architecture/process-manager-standards.md",
+      "bytes": 1821,
+      "sha256": "b9488f3e35a95146fd86c9dbd64a01e0eef53812519f25681a2f8a58b8b8df99"
+    },
+    {
+      "path": "docs/architecture/security-architecture.md",
+      "bytes": 2590,
+      "sha256": "e1b2756298b73f4a757c509ca396a347aebfa01939e30b91d73eea3e4a0193a2"
+    },
+    {
+      "path": "docs/architecture/source-of-truth-matrix.md",
+      "bytes": 6587,
+      "sha256": "a5e12211148e63d5396d35f08444727a7ab9b815efb190c7bdb230e21484cc5a"
+    },
+    {
+      "path": "docs/architecture/transaction-boundaries.md",
+      "bytes": 2059,
+      "sha256": "cd2a261e15bf5bbb4e8404425408462c114a0e01454a74a025bf01c8f3b65074"
+    },
+    {
+      "path": "docs/contexts/README.md",
+      "bytes": 1922,
+      "sha256": "2e6d67647a40c24bc42be187fe638214566ee21f6723dfb58dbc6fef81c4dea8"
+    },
+    {
+      "path": "docs/contexts/activity/activity-context-implementation-pack.md",
+      "bytes": 4012,
+      "sha256": "e0225e93485c0f7ad8aa913fb93134befd13f023398c2566483bc4fe255fa12a"
+    },
+    {
+      "path": "docs/contexts/analytics/analytics-context-implementation-pack.md",
+      "bytes": 4098,
+      "sha256": "6211979f0c13cdcdfb806ef0bae3eb50cf9768d8224951f819decb09603c4ecf"
+    },
+    {
+      "path": "docs/contexts/audit/audit-context-implementation-pack.md",
+      "bytes": 3593,
+      "sha256": "dd4a182e5f3b30d79707629d79908e03b9b9ea39f9d7ec5c1ee528dcd41072b7"
+    },
+    {
+      "path": "docs/contexts/contract/contract-context-implementation-pack.md",
+      "bytes": 4254,
+      "sha256": "b68d4de0ac0121e69e13c369083306c743a450da0ff22e5fbfd472bab24eafd8"
+    },
+    {
+      "path": "docs/contexts/documents/documents-context-implementation-pack.md",
+      "bytes": 4079,
+      "sha256": "0decbb33554d5476ea8828ae6e7fcdfb227712d6d59f064faf54576ddc71f80f"
+    },
+    {
+      "path": "docs/contexts/iam/iam-context-implementation-pack.md",
+      "bytes": 3877,
+      "sha256": "275b7781ef214fd0c5f043ca5fc4eed78ba0d24695a8cbb9d93e8b5af8d80090"
+    },
+    {
+      "path": "docs/contexts/integration/integration-context-implementation-pack.md",
+      "bytes": 4069,
+      "sha256": "24d569c18875e9af8eb9842d801bf845462c62e755c0b934c2ebe8d1ee239cb4"
+    },
+    {
+      "path": "docs/contexts/lead/lead-context-implementation-pack.md",
+      "bytes": 3816,
+      "sha256": "1608194259af397dcbaec113c390fe712de598100cad40e8fe6f30dd05056eb2"
+    },
+    {
+      "path": "docs/contexts/marketing/marketing-context-implementation-pack.md",
+      "bytes": 4317,
+      "sha256": "4a82d0ad525cb5262ee468f085a73cc6d1c4ae039b67b76d9fd5ba7bc34034dd"
+    },
+    {
+      "path": "docs/contexts/matching/matching-context-implementation-pack.md",
+      "bytes": 3920,
+      "sha256": "1e00f3f4baa64457e6a35951a09b7dcbc126f3277ac37880c71e972d0702db83"
+    },
+    {
+      "path": "docs/contexts/operations/operations-context-implementation-pack.md",
+      "bytes": 4248,
+      "sha256": "878cce6d1e542e0cacd2b3bd90a0c0a9262bfde2e40f9185457c5964bcf92eaa"
+    },
+    {
+      "path": "docs/contexts/party/party-context-implementation-pack.md",
+      "bytes": 4098,
+      "sha256": "184601f229f7e400870cc4fa4c1989cbcc5530b189ab2c63d2551c91ddfe490b"
+    },
+    {
+      "path": "docs/contexts/platform/platform-context-implementation-pack.md",
+      "bytes": 4020,
+      "sha256": "cf1b733b5b6bfe92c89229cb2da05b7830ca1d09c14d4c14b921e15a1fc11aec"
+    },
+    {
+      "path": "docs/contexts/product/product-context-implementation-pack.md",
+      "bytes": 4075,
+      "sha256": "c6a4ce074f0442daba1a98363ce54f9ed8f2cdca097bcd30ced168f63c57493a"
+    },
+    {
+      "path": "docs/contexts/revenue/revenue-context-implementation-pack.md",
+      "bytes": 4426,
+      "sha256": "91ac78746372655bf00f027d1523890229c4d77e95d39a0c6caecadd06fe02a4"
+    },
+    {
+      "path": "docs/contexts/transaction/transaction-context-implementation-pack.md",
+      "bytes": 4022,
+      "sha256": "eeaa816705ecce43475452b4f8185e0f6320d5c90984eb8599fa492c2c713f63"
+    },
+    {
+      "path": "docs/design/dashboard-visualization-system.md",
+      "bytes": 1126,
+      "sha256": "c04bf666a029f3d9c21b3018edb525a7c938a539762f97dabe2ddb5b1a38a5aa"
+    },
+    {
+      "path": "docs/design/design-system.md",
+      "bytes": 39499,
+      "sha256": "6b240a97b26d6d6beee39d0fff40e66aff3117054f82e10284fe9b28fec86260"
+    },
+    {
+      "path": "docs/design/design-tokens.md",
+      "bytes": 978,
+      "sha256": "c0f566435bf9535d9a588fb025621d53c7fb493d37928ded3a1d391621984197"
+    },
+    {
+      "path": "docs/design/navigation-and-information-architecture.md",
+      "bytes": 1160,
+      "sha256": "8089febe2035c323abd36c49913bd9a3a4670908e7b090863b99484a3ea53e4f"
+    },
+    {
+      "path": "docs/engineering/ai-agent-engineering-constitution.md",
+      "bytes": 45201,
+      "sha256": "91fe5eef4ac7a5e372762b34ba335d8cf182d51cbd15989e5590c3c9dcb6f2e2"
+    },
+    {
+      "path": "docs/engineering/api-standards.md",
+      "bytes": 26116,
+      "sha256": "d03213b027dd086cf284b07f35e54debb5b561f3a7bfbb3c9f2eb9240eb4d6b4"
+    },
+    {
+      "path": "docs/engineering/coding-standards.md",
+      "bytes": 44731,
+      "sha256": "6c1a7b61942e3a5b395d08ae277ac073c27e011bc563083a6714cfae3c83659a"
+    },
+    {
+      "path": "docs/engineering/database-standards.md",
+      "bytes": 43141,
+      "sha256": "252825034faa59b8b5bfbf45f7dac9e45fbc5c7817834bfe2b83dcf047e62c40"
+    },
+    {
+      "path": "docs/engineering/documentation-governance.md",
+      "bytes": 6000,
+      "sha256": "f78469bd89ea0e40946b7b4f25a3b6fa83680c4fc5e11cee3cb0416118a90536"
+    },
+    {
+      "path": "docs/engineering/error-code-registry.md",
+      "bytes": 2179,
+      "sha256": "61dcf14a97cfd3a64b1d69f097bea85c352708785792003126e755fab0e21351"
+    },
+    {
+      "path": "docs/engineering/event-standards.md",
+      "bytes": 51678,
+      "sha256": "7399f48ce0c0245b49e8291a875d7fc5fbac56b586168eca6e2b19475bfed6e1"
+    },
+    {
+      "path": "docs/engineering/frontend-standards.md",
+      "bytes": 42736,
+      "sha256": "7699af710d8c835e7832c6ccf5e0133522a7f0f68164ebec4983d14fb402af59"
+    },
+    {
+      "path": "docs/engineering/observability-standards.md",
+      "bytes": 58909,
+      "sha256": "c2e8ebc1c01cc8ef2c05f3458186a215c3fbd993ea56d0925992c9d4bba70b25"
+    },
+    {
+      "path": "docs/engineering/security-standards.md",
+      "bytes": 49062,
+      "sha256": "9a23e5165a9be3ce182c150fe0425825a5dff0890129cafdfc3b7ab4d83d9ed7"
+    },
+    {
+      "path": "docs/engineering/technology-toolchain-lock.md",
+      "bytes": 14602,
+      "sha256": "5d0dde5b70ecbf58fd868c6cb4cd8b0f67253a4d4f700760615fab6eda372906"
+    },
+    {
+      "path": "docs/engineering/testing-standards.md",
+      "bytes": 40110,
+      "sha256": "82c13f00fbc25ed58a82a13381d21d377eee89c841b53be77e8c6a89cf35bbfb"
+    },
+    {
+      "path": "docs/historical/README.md",
+      "bytes": 880,
+      "sha256": "e2aa2c7deefd2da31490568ae5467604736e3687d01317b11a6ea6f0f40416d5"
+    },
+    {
+      "path": "docs/implementation/ai-copilot-mvp-acceptance-checklist.md",
+      "bytes": 878,
+      "sha256": "df6ed718f96ddb6e031ffa90dd946d2490e7e7bafc4247760048a8fe41c155f3"
+    },
+    {
+      "path": "docs/implementation/ai-gateway-bootstrap-blueprint.md",
+      "bytes": 1135,
+      "sha256": "b588d019ff5ab63f5b92bb0f8f1ed6197c4775b686ebe53379df65b9eefce26a"
+    },
+    {
+      "path": "docs/implementation/ai-provider-adapter-sdk.md",
+      "bytes": 935,
+      "sha256": "7a36c60a19deb5390374d34b17f09e3c6bdf41a59bf36a74147f43bb52cf13af"
+    },
+    {
+      "path": "docs/implementation/ai-readiness-gate.md",
+      "bytes": 741,
+      "sha256": "06218f6285ae7f941e003aa7894ba804c539106c3d78c7c725f21f691a67ba72"
+    },
+    {
+      "path": "docs/implementation/ai-runtime-project-structure.md",
+      "bytes": 1079,
+      "sha256": "5047891d3454747da9990ba1fd9b4d07a34e6921a4d9676b0a5b8ed5640864cf"
+    },
+    {
+      "path": "docs/implementation/bootstrap-acceptance-checklist.md",
+      "bytes": 1185,
+      "sha256": "96f4b5b0c220ed211e9762606781ebb0bed224a7b345187b10e3d4ca8088e512"
+    },
+    {
+      "path": "docs/implementation/ci-quality-gates.md",
+      "bytes": 1158,
+      "sha256": "892cd7084501098342141dcca2140eac2bb0e67b7d655928d5bf24be35093084"
+    },
+    {
+      "path": "docs/implementation/dev-command-contract.md",
+      "bytes": 1212,
+      "sha256": "5fa9e6b85d65641df9db76f5842aedee3ecc41402dde83451225f4eed8189168"
+    },
+    {
+      "path": "docs/implementation/health-readiness-contract.md",
+      "bytes": 1198,
+      "sha256": "29c3bfd33c6a834bf2d27f5f7fda9cc4bea7cac3af19c01558d7f02a4aeaff70"
+    },
+    {
+      "path": "docs/implementation/local-development-contract.md",
+      "bytes": 1149,
+      "sha256": "fb1fb119bf0d011bb62555bd09c337fb158871576e69981106bc18dbc4a4a6f6"
+    },
+    {
+      "path": "docs/implementation/machine-contract-bootstrap.md",
+      "bytes": 1066,
+      "sha256": "35a514d9276ad345faade7a18cd3c3dc274e8ecfac176f9cdd77e4e05bb874fa"
+    },
+    {
+      "path": "docs/implementation/project-structure.md",
+      "bytes": 1601,
+      "sha256": "571c90a37bb15dc554fa74c275d3d810463780b8152f76921f176df0793b1472"
+    },
+    {
+      "path": "docs/implementation/release-branching-strategy.md",
+      "bytes": 1077,
+      "sha256": "942a5150bb26557fff125373d60b38d3632e73f808d8d04c46d40292685d6b40"
+    },
+    {
+      "path": "docs/implementation/repository-bootstrap-blueprint.md",
+      "bytes": 1659,
+      "sha256": "c5c7b2f2fb2998cf4795a4a551c94be2ee4f775e4067429015f2306fcb9f2b9c"
+    },
+    {
+      "path": "docs/operations/backup-restore-dr-policy.md",
+      "bytes": 944,
+      "sha256": "a69d437cf9afb7569a1cb09ce44a856c3c003e87de9ebb8e3bf7a91d040cbd2a"
+    },
+    {
+      "path": "docs/operations/disaster-recovery.md",
+      "bytes": 780,
+      "sha256": "eda7d39c9f88b136a8e12cb3dd76bd50e64cbff844ec37e008a4fa5e4c6c109d"
+    },
+    {
+      "path": "docs/operations/environment-strategy.md",
+      "bytes": 935,
+      "sha256": "80ca0fe50acc56e2e1653a769e2bbe6ccf02fae6bb94ff1f395915f10b681aa4"
+    },
+    {
+      "path": "docs/operations/release-management.md",
+      "bytes": 961,
+      "sha256": "7619fd4db5f31f59974647bdb4f3b10dc6c8876b28809f9c74e954c4ee26f26a"
+    },
+    {
+      "path": "docs/operations/service-level-objectives.md",
+      "bytes": 727,
+      "sha256": "3682d13d52ef04ddb3cf1e62edf0aa9bcb0693ec40a4c261af0cbd2ea37b9f7c"
+    },
+    {
+      "path": "docs/product/PRD.md",
+      "bytes": 43545,
+      "sha256": "7f7654a6a64526a8fd4aead1b11e2fcbcd0643004ad6262ad375c125f8d5f1a8"
+    },
+    {
+      "path": "docs/product/business-rule-anti-patterns.md",
+      "bytes": 11461,
+      "sha256": "93c6d8c6f76496bcbae1620c948add2875548194e400dbe14cdc1a0aa0b395a6"
+    },
+    {
+      "path": "docs/product/business-rules-index.md",
+      "bytes": 3343,
+      "sha256": "ccac4e0dde3874441ee34bef5accd8fcb047dff038810076ba4cd1dc7715c553"
+    },
+    {
+      "path": "docs/product/canonical-business-rules.md",
+      "bytes": 9541,
+      "sha256": "4fb54841a3cda9f085d30fd9dd278eca7367d0fc65efd9997e5f48a06eb9ed8d"
+    },
+    {
+      "path": "docs/product/canonical-requirements-registry.md",
+      "bytes": 13262,
+      "sha256": "40473dd388801b7d6feb1c23954aacd4963696f7737a712b004204867b1120e9"
+    },
+    {
+      "path": "docs/product/capabilities/cap-01-platform-configuration.md",
+      "bytes": 96151,
+      "sha256": "dcee484e3f1c65cc8e0027d36d99ff6eecdae85db93983190ecb7fb5a9049e28"
+    },
+    {
+      "path": "docs/product/capabilities/cap-02-identity-access-organization.md",
+      "bytes": 99907,
+      "sha256": "07afc47b02917d4a1de9f5837b3748e0c8c7233c9a8ffc003c728f8f789b2d29"
+    },
+    {
+      "path": "docs/product/capabilities/cap-03-lead-management.md",
+      "bytes": 96800,
+      "sha256": "89db23e04caf0261a789d641ae1b6b5dde7390311b0d2aa9432b12362548057c"
+    },
+    {
+      "path": "docs/product/capabilities/cap-04-customer-360.md",
+      "bytes": 107027,
+      "sha256": "b12d49ab3eb62b8a51273c36cc8ce367d478918ce9c0430131a39341fd57dbdd"
+    },
+    {
+      "path": "docs/product/capabilities/cap-05-customer-identity-governance.md",
+      "bytes": 104488,
+      "sha256": "18c40a1b1a28a7648e7dedd3091cdf9dfaae1bce03aafa3de09458b67a8a7483"
+    },
+    {
+      "path": "docs/product/capabilities/cap-06-product-asset-listing-inventory.md",
+      "bytes": 116666,
+      "sha256": "4fdac0ebb0b0cf820b5f605f460d12638e74612bbb64ac874c5a46bd0a490c99"
+    },
+    {
+      "path": "docs/product/capabilities/cap-07-matching.md",
+      "bytes": 106262,
+      "sha256": "ac6710987590c035d00b54c2ae0c3c3caf079578616b5534c61bbd3dccad9940"
+    },
+    {
+      "path": "docs/product/capabilities/cap-08-deal-and-transaction.md",
+      "bytes": 117603,
+      "sha256": "769325592972236a36ce978744b130339ed5bfc33b68c49d531cbfa381d9470a"
+    },
+    {
+      "path": "docs/product/capabilities/cap-09-contract-and-cash.md",
+      "bytes": 134943,
+      "sha256": "7dcdd2b4b194738b99ebc9c951f9c50ffa5460e6749802034e943257e6adbdad"
+    },
+    {
+      "path": "docs/product/capabilities/cap-10-revenue-and-commission.md",
+      "bytes": 128587,
+      "sha256": "167e9fe8d7f0942b512cea58de41c0da734d6fbb0266996b0576e9944f10aa41"
+    },
+    {
+      "path": "docs/product/capabilities/cap-11-activity-and-engagement.md",
+      "bytes": 120688,
+      "sha256": "3c798bdc784513d8421c04be7cb0cd57a148ec262ecb60eaf6ab9ff579043964"
+    },
+    {
+      "path": "docs/product/capabilities/cap-12-marketing.md",
+      "bytes": 143010,
+      "sha256": "98108e0fafe31d133dfdd84f954dde5726e2dd1cffa75872e814521a87f984e7"
+    },
+    {
+      "path": "docs/product/capabilities/cap-13-analytics.md",
+      "bytes": 133953,
+      "sha256": "034a02953cc223978e7b2f631946c502d2304b407d63deeaeb049f05d5d98b95"
+    },
+    {
+      "path": "docs/product/capabilities/cap-14-runtime-support-overview.md",
+      "bytes": 139833,
+      "sha256": "f25a23f9473f40053010d333e579d11f1a8a565f9133046327e52b1956556935"
+    },
+    {
+      "path": "docs/product/capability-context-mapping.md",
+      "bytes": 1567,
+      "sha256": "abd7cdea11239fcc0cd7a2c59eb61ec50967f4449a8e9288a3992515b0144d33"
+    },
+    {
+      "path": "docs/product/domain-glossary.md",
+      "bytes": 11621,
+      "sha256": "8001cad5b5ae596e4c335a76be508d89f06d76997750c23ecb33c3ba8f1189aa"
+    },
+    {
+      "path": "docs/product/open-decisions-register.md",
+      "bytes": 2862,
+      "sha256": "7dc9d603f8165c4625137d47c640312a94fd795912da921eac2aabf7d04bc776"
+    },
+    {
+      "path": "docs/product/product-overview.md",
+      "bytes": 32629,
+      "sha256": "c9f68d6fa9afea888abafaecd5a0acc7a40793ee3dae3fbd8b2686871721862d"
+    },
+    {
+      "path": "docs/reviews/context-readiness-checklist.md",
+      "bytes": 1208,
+      "sha256": "0ae6ab0bb211de84b51383699321c69a4def51677f7418275bcb1c44eb63a222"
+    },
+    {
+      "path": "docs/reviews/documentation-readiness-registry.md",
+      "bytes": 1394,
+      "sha256": "3c55d6b21299281f35720860df934a29d14348b1aebe853da683d8f75b9e68f4"
+    },
+    {
+      "path": "docs/reviews/sprint-0-acceptance-report-template.md",
+      "bytes": 781,
+      "sha256": "5c1396018db506c1e13d1f043e9754957fb821463e8791f255fce01dc39cabdf"
+    },
+    {
+      "path": "docs/reviews/sprint-0-readiness-checklist.md",
+      "bytes": 1055,
+      "sha256": "fa475a2af7fe294ee6037ea664de39b0ff25bf22f1e4ca8f752c81bfebcb63d9"
+    },
+    {
+      "path": "docs/reviews/sprint-1-readiness-checklist.md",
+      "bytes": 871,
+      "sha256": "fbbdb0e5bddee386aa22d9ea8ae750fd5539d299daaa6db768c50730300dda09"
+    },
+    {
+      "path": "docs/roadmap/sprint-context-dependency-map.md",
+      "bytes": 1189,
+      "sha256": "2522ee21c5528bcc9fb5b521b81ec90af61cdca226f28c7812b1a12bbec1d8ac"
+    },
+    {
+      "path": "docs/roadmap/sprint-roadmap.md",
+      "bytes": 17279,
+      "sha256": "9e4f69ce9369683e7ef3cbd8357845bd53dbc9b46337b06ef0dc281b167c05d7"
+    },
+    {
+      "path": "docs/runbooks/ai-cost-spike.md",
+      "bytes": 588,
+      "sha256": "09463185ba81cd7ce7b9ee17fa1b66cb6a035a897c67ff25ac77193aea31ee12"
+    },
+    {
+      "path": "docs/runbooks/ai-data-leak-response.md",
+      "bytes": 644,
+      "sha256": "f65beeab4d231b90d41bc466a323abba808a3a06f9a21692a865b7e586648780"
+    },
+    {
+      "path": "docs/runbooks/ai-index-rebuild.md",
+      "bytes": 648,
+      "sha256": "aaabece6f3415aadc56f941b24b1db3c0524db2cc55543e2b0218e26d09f849f"
+    },
+    {
+      "path": "docs/runbooks/ai-provider-outage.md",
+      "bytes": 673,
+      "sha256": "7a6040e2715ca8421f1c8f72dd57da0e39f5463649002a6447c77f4489ec646f"
+    },
+    {
+      "path": "docs/runbooks/ai-quality-regression.md",
+      "bytes": 592,
+      "sha256": "ed5901612a2995ad7adc2958d87e1ef88b1962d3c4015b3b503be123ac6e8dc8"
+    },
+    {
+      "path": "docs/runbooks/backup-and-restore.md",
+      "bytes": 60752,
+      "sha256": "b8f272c99aeb321bbe708f78c043a722b50863ec8b082bf95e258d25b3c2aee0"
+    },
+    {
+      "path": "docs/runbooks/data-repair.md",
+      "bytes": 819,
+      "sha256": "abb6f0d007d17f3dcd0929e9d95d713402fe72c2dc669725c5312ff2357991bd"
+    },
+    {
+      "path": "docs/runbooks/incident-response.md",
+      "bytes": 762,
+      "sha256": "10f547e2cfcbbc8c9734bfc510bf0ae3ed5d671b33e992779ba1164a64bcd302"
+    },
+    {
+      "path": "docs/runbooks/local-development.md",
+      "bytes": 1021,
+      "sha256": "9f659e0a59351a6afd8902bd322ebca75d433f949acd1da98d7e70953466f87e"
+    },
+    {
+      "path": "docs/runbooks/provider-outage.md",
+      "bytes": 906,
+      "sha256": "bc9bbe622aea7c92e1e9ad977d0e7656cad81f8dd233d4025faa98f6094d2d39"
+    },
+    {
+      "path": "docs/runbooks/queue-backlog.md",
+      "bytes": 836,
+      "sha256": "4b17f338414cd36b08cba5347ca387291d611baa37f1e50efd6efc9d94a942d5"
+    },
+    {
+      "path": "docs/runbooks/release-and-rollback.md",
+      "bytes": 921,
+      "sha256": "f1bdc1ca46aa3f1712ee43918853cb8b6f37b5a564ed7bb66783e6d36f765d57"
+    },
+    {
+      "path": "docs/security/ai-data-handling-policy.md",
+      "bytes": 905,
+      "sha256": "825f31113feb03fea0e1ba4d075cec360641ece790061a493ef7bfa947865935"
+    },
+    {
+      "path": "docs/security/ai-provider-trust-policy.md",
+      "bytes": 656,
+      "sha256": "b033f9b83293f1ca5641dd2b9dd4743c12238b359d6a484f76156ab80c6834f2"
+    },
+    {
+      "path": "docs/security/ai-tool-permission-matrix.md",
+      "bytes": 826,
+      "sha256": "533a07e936d3c74785a268cfcc5c9f1c03fbd3ad4eb1acf5802586c50b6b423a"
+    },
+    {
+      "path": "docs/security/customer-visibility-policy.md",
+      "bytes": 1247,
+      "sha256": "bbc6a6204235d1b43ccfff25f77c781a92b207c0478ec7f22b67f75cf1da0ec2"
+    },
+    {
+      "path": "docs/security/data-classification.md",
+      "bytes": 1259,
+      "sha256": "0bed1618d2d00d5738a2ac6bccda4896c68677b737ce971f83f3ebc6b33a86c4"
+    },
+    {
+      "path": "docs/security/export-policy.md",
+      "bytes": 1144,
+      "sha256": "e05058c3af16f8482c649e9dc7d00baac862ab40443b0c947f0e6e83893a2a24"
+    },
+    {
+      "path": "docs/security/field-masking-matrix.md",
+      "bytes": 1843,
+      "sha256": "fba347aad6570b248bd804c90565fe9b69fbdd62c81a50279f55da5cedf8ff4e"
+    },
+    {
+      "path": "docs/security/permission-registry.md",
+      "bytes": 11709,
+      "sha256": "f5733439accb5c4008fdcbb9e5bfcf35dbab36f41633661f69ba574ac1ca0c03"
+    },
+    {
+      "path": "docs/security/privacy-and-retention.md",
+      "bytes": 1296,
+      "sha256": "074a6fa30db222c32e20ef6291353bf7a5efc89ef20761a8848ef970251c4622"
+    },
+    {
+      "path": "docs/security/role-baseline-matrix.md",
+      "bytes": 3352,
+      "sha256": "d1124f1d39e3a585d1fe2933698763f1ef8f871ec9c4cbbe1e416930628b67a2"
+    },
+    {
+      "path": "docs/security/scope-resolution.md",
+      "bytes": 1461,
+      "sha256": "b50113d0eb3d5fc4ea6ca82fdd75cad707406f4dc56adba886916768f12ec489"
+    },
+    {
+      "path": "docs/security/secrets-management.md",
+      "bytes": 974,
+      "sha256": "a6802ff4710131cd7d179fc5d6b3470617f62f6645838222f5cb2dc711fc226e"
+    },
+    {
+      "path": "docs/security/security-test-matrix.md",
+      "bytes": 1036,
+      "sha256": "ded2cabcf806b59d16c50d9a40fad1be69d44ea65b80fcc38a8ac6d3589e4503"
+    },
+    {
+      "path": "docs/security/segregation-of-duties.md",
+      "bytes": 1564,
+      "sha256": "cd38d5840650bbdc5ff503f127a060b2b98bcb74058a2130380f0e6521175f33"
+    },
+    {
+      "path": "docs/security/threat-model.md",
+      "bytes": 2041,
+      "sha256": "c3888f37644d0e113cc13a44a21a2fa46cd1913de5e39e5ac247e1554d75bb31"
+    },
+    {
+      "path": "docs/sprints/README.md",
+      "bytes": 1868,
+      "sha256": "5b229b92c48be1a733d99a10ac574bc5519501d37f6d2639626567cc3b76f239"
+    },
+    {
+      "path": "docs/sprints/sprint-000/sprint-000-preparation-pack.md",
+      "bytes": 14369,
+      "sha256": "d216ccd27145cac52d55dfb04ab458c4d606d74af02b8c8a7742870bc484e834"
+    },
+    {
+      "path": "docs/sprints/sprint-001/repository-bootstrap-checklist.md",
+      "bytes": 800,
+      "sha256": "c52ada96d0d86e1d3274f7557f457f136b04586071dd988ac86d0f18a1d8ae04"
+    },
+    {
+      "path": "docs/sprints/sprint-001/sprint-001-execution-pack.md",
+      "bytes": 16409,
+      "sha256": "a68f5e376c8429e43855baaee96b343ac812a31cd70071264bcc13c9c663e516"
+    },
+    {
+      "path": "docs/sprints/sprint-002/reliability-foundation-checklist.md",
+      "bytes": 892,
+      "sha256": "52233a6744c84b778a8f54ceb3fe652d95b7a484cb578a882a2d94435fba270d"
+    },
+    {
+      "path": "docs/sprints/sprint-002/sprint-002-execution-pack.md",
+      "bytes": 18820,
+      "sha256": "328d513383a0401add70a69e6f5ae84c6f3d690cbdd8eb9d5cb20a4384e8cbba"
+    },
+    {
+      "path": "docs/sprints/sprint-003/platform-foundation-checklist.md",
+      "bytes": 806,
+      "sha256": "18da27db9be64796d95156f6b412303dd8394a5d98698c93b77da43e3532a579"
+    },
+    {
+      "path": "docs/sprints/sprint-003/sprint-003-execution-pack.md",
+      "bytes": 17272,
+      "sha256": "43c665b9f87106551c5679f1b0bc1eaa5a41f1c31a3207c51ca4679b4d967ed4"
+    },
+    {
+      "path": "docs/templates/acceptance-report-template.md",
+      "bytes": 627,
+      "sha256": "28a48c5d542c25df29e7870b208af1ea83f9f74e5266dc2540af76847efbd8d6"
+    },
+    {
+      "path": "docs/templates/adr-template.md",
+      "bytes": 644,
+      "sha256": "b7f02abca46ddb4ca97709ff0258d23b2350580461fa87da6e9a8ec1f1330296"
+    },
+    {
+      "path": "docs/templates/api-change-template.md",
+      "bytes": 573,
+      "sha256": "2b0bccff30589a7fcb4b82f1f71157f0a36f7a7992a9c3794f5881fe70f0bdf5"
+    },
+    {
+      "path": "docs/templates/completion-report-template.md",
+      "bytes": 694,
+      "sha256": "178f0db9994bc464c1b6ea392ffeeb6459d1564e076375e4d0cf101724b2944f"
+    },
+    {
+      "path": "docs/templates/context-pack-template.md",
+      "bytes": 821,
+      "sha256": "c8584e4eef333251b858d486cc49829a545b481bfa55984510292b4c552a9ddf"
+    },
+    {
+      "path": "docs/templates/event-change-template.md",
+      "bytes": 559,
+      "sha256": "d402fb33daa1ace3abb042f7c38d8d59748532a9d3ab23ff6183cf01a1b5b025"
+    },
+    {
+      "path": "docs/templates/implementation-notes-template.md",
+      "bytes": 661,
+      "sha256": "433d8306f00ba1a7c089ad4b7aeefc44f36a33f3091771fb42e481e90e17ebdc"
+    },
+    {
+      "path": "docs/templates/permission-change-template.md",
+      "bytes": 603,
+      "sha256": "473a00054b57c1b4cc88d702a171c710ece7aa858ac420fba4508ed06622ae0f"
+    },
+    {
+      "path": "docs/templates/process-manager-template.md",
+      "bytes": 618,
+      "sha256": "283068d9d7cfc551b26a861577ccb7ec7259baf67f4566ae696ba6d3ad565e8d"
+    },
+    {
+      "path": "docs/templates/runbook-template.md",
+      "bytes": 536,
+      "sha256": "53b5a680ecd82ae358633cdad9eb5d67abb74488383afa7d39c4242e43ac743f"
+    },
+    {
+      "path": "infrastructure/README.md",
+      "bytes": 753,
+      "sha256": "511c35e4934b3223d6603742750bea582d1398e2d740a06e08b5ff004a780664"
+    },
+    {
+      "path": "infrastructure/docker/images.lock",
+      "bytes": 239,
+      "sha256": "4b3692871248d3409df00bbb0932558c38332a7c8199b4ff03032a99636854d4"
+    },
+    {
+      "path": "infrastructure/toolchain.lock.toml",
+      "bytes": 574,
+      "sha256": "1f6a8ee6f7590e9db5280a882d923a00f0a9291d222781333733118790563664"
+    }
+  ]
+}

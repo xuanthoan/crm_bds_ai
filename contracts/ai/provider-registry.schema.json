@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://crm-bds-ai.local/contracts/ai/provider-registry.schema.json",
+  "title": "AI Provider Registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "providers"
+  ],
+  "properties": {
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "providers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "adapter_type",
+          "deployment_type",
+          "status",
+          "secret_ref",
+          "allowed_classifications"
+        ],
+        "properties": {
+          "code": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_-]{1,63}$"
+          },
+          "adapter_type": {
+            "type": "string"
+          },
+          "deployment_type": {
+            "enum": [
+              "LOCAL_WORKSTATION",
+              "ON_PREMISE_SERVER",
+              "PRIVATE_CLOUD",
+              "PUBLIC_CLOUD",
+              "MANAGED_ENTERPRISE"
+            ]
+          },
+          "base_url_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "secret_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "region": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "allowed_classifications": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "status": {
+            "enum": [
+              "DRAFT",
+              "TESTING",
+              "APPROVED",
+              "ACTIVE",
+              "SUSPENDED",
+              "RETIRED"
+            ]
+          },
+          "timeout_seconds": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 600
+          },
+          "metadata": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}
