@@ -1,0 +1,48 @@
+# --- Environment / secrets ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.python-build-standalone/
+
+# --- Node / frontend ---
+node_modules/
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+.vite/
+coverage/
+
+# --- Tooling / OS ---
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- Local data / logs ---
+*.log
+logs/
+data/
+
+# --- Generated artifacts that are reproducible (NOT ignored: canonical generated contracts are committed) ---
+# backend/.uv/ ignored
+backend/.uv/
