@@ -1,0 +1,29 @@
+[package]
+product = "crm_bds_ai"
+version = "1.0.0-foundation"
+status = "SPRINT_0_VALIDATION_REQUIRED"
+
+[core]
+python = "3.14.6"
+fastapi = "0.139.2"
+sqlalchemy = "2.0.51"
+postgresql = "18.4"
+rabbitmq = "4.3.3"
+valkey = "9.1.0"
+nextjs = "16.2.11"
+react = "19.2.8"
+typescript = "6.0.0"
+
+[pending_exact_lock]
+node = "24-LTS-exact-patch-pending"
+pnpm = "pending"
+pydantic = "pending"
+alembic = "pending"
+psycopg = "pending"
+celery = "pending"
+object_storage = "pending"
+
+[rules]
+floating_latest_tags = false
+clean_lockfile_install_required = true
+change_requires_approval = true

@@ -23,6 +23,9 @@ SKIP_SUFFIXES = {".pyc", ".png", ".jpg", ".jpeg", ".gif", ".ico", ".woff", ".wof
 SKIP_FILES = {"uv.lock", "pnpm-lock.yaml", "package-lock.json", "poetry.lock", "go.sum", "Cargo.lock"}
 
 FORBIDDEN_FILENAMES = {".env", ".env.local", ".env.production", ".env.development"}
+# Sanctioned placeholder-only env templates (e.g. frontend/.env.example) are allowed;
+# they are content-scanned below, where known placeholder values are permitted.
+ENV_TEMPLATE_SUFFIX = ".env.example"
 
 PATTERNS: list[tuple[str, re.Pattern[str]]] = [
     ("aws_access_key", re.compile(r"\bAKIA[0-9A-Z]{16}\b")),
@@ -68,13 +71,14 @@ def iter_files(root: Path) -> list[Path]:
 def scan_repo(root: Path = ROOT) -> list[Finding]:
     findings: list[Finding] = []
     for path in iter_files(root):
-        if path.name in FORBIDDEN_FILENAMES or path.name.endswith(".env.example"):
+        if path.name in FORBIDDEN_FILENAMES:
             findings.append(Finding(path=path, line=1, kind="forbidden_env_file"))
             continue
         try:
             lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
         except OSError:
             continue
+        # Real env files are forbidden by filename above; *.env.example templates fall through to content scanning.
         for lineno, line in enumerate(lines, start=1):
             if any(placeholder in line for placeholder in KNOWN_LOCAL_PLACEHOLDERS):
                 continue

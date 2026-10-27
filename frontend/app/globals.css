@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@import "../design-system/tokens.css";
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+}
+
+.shell-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.shell-header h1 {
+  margin: var(--space-2) 0 0;
+  font-size: 2rem;
+}
+
+.eyebrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.lead {
+  color: var(--color-muted);
+}
+
+.shell-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: var(--space-4);
+}
+
+.shell-nav a,
+.shell-page a {
+  color: var(--color-accent);
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--color-accent);
+  color: #0f172a;
+  padding: var(--space-2) var(--space-4);
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+.status-ok {
+  color: var(--color-success);
+}
+
+.status-degraded {
+  color: var(--color-warning);
+}
+
+.status-unhealthy {
+  color: var(--color-danger);
+}
+
+.status-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: var(--space-2);
+}

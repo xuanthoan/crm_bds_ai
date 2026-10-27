@@ -1,0 +1,6 @@
+# TEMPLATE / SPRINT 0 VALIDATION REQUIRED
+postgres=postgres:18.4
+rabbitmq=rabbitmq:4.3.3-management
+valkey=valkey/valkey:9.1.0
+object_storage=<pending-approved-image-and-digest>
+# Production must prefer immutable digests after validation.
