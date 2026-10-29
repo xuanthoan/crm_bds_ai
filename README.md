@@ -1,5 +1,7 @@
 # CRM_BDS_AI — DOCUMENTATION MAP AND AI AGENT ENTRY POINT
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Cổng vào chính thức của hệ thống tài liệu `crm_bds_ai`
 
 **Document ID:** `DOC-ROOT-001`  

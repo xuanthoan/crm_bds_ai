@@ -2,6 +2,7 @@
   "name": "crm-bds-ai-frontend",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "description": "CRM_BDS_AI frontend shell (Sprint 1 Engineering Foundation). No business UI.",
   "packageManager": "pnpm@11.20.0",
   "engines": {
